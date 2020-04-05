@@ -1,0 +1,96 @@
+<view class="goodInfo">
+    <view class="detail_swiper">
+        <swiper class="" indicator-dots circular autoplay>
+            <swiper-item wx:for="{{goods_detail.swiper_pics}}" wx:key="id" bindtap="handlePrevewImage"
+                data-url="{{item.pic}}">
+                <image mode="widthFix" src="{{item.pic}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="goods_price">￥{{goods_detail.originPrices}}</view>
+    <view class="good_basicInfo">
+        <view class="goods_name_row">
+            <view class="goods_name">{{goods_detail.goodsName}}</view>
+            <!-- <view class="goods_collect" bindtap="handleCollect" >
+                <text class="iconfont   {{isCollect?'icon-shoucang1':'icon-shoucang'}} "></text>
+                <view class="collect_text">收藏</view>
+            </view> -->
+        </view>
+        <view class="goods_name_row">
+            <view class="goods_name">{{goods_detail.characteristic}}</view>
+        </view>
+    </view>
+    <view class="goods_info">
+        <view class="goods_info_title">图文详情</view>
+        <view class="goods_info_content">
+            <!-- 富文本 -->
+            <!-- {{goodsObj.goods_introduce}} -->
+            <rich-text nodes="{{goods_detail.detail}}"></rich-text>
+        </view>
+    </view>
+
+    <view class="btm_tool">
+        <!-- <view class="tool_item">
+            <view class="iconfont icon-kefu"></view>
+            <view>客服</view>
+            <button open-type="contact"></button>
+        </view>
+        <view class="tool_item">
+            <view class="iconfont icon-yixianshi-"></view>
+            <view>分享</view>
+            <button open-type="share"></button>
+        </view> -->
+        <navigator open-type="switchTab" url="/pages/shopCar/shopCar" class="tool_item">
+            <view class="iconfont icon-gouwuche"></view>
+            <view>购物车</view>
+        </navigator>
+        <view class="tool_item btn_buy" bindtap="handleCollect">
+            收藏
+        </view>
+        <view class="tool_item btn_cart " bindtap="handleCartAdd">
+            加入购物车
+        </view>
+    </view>
+    <view class='mask-layer' wx:if="{{showPop}}" bindtap='hideModal'></view>
+    <view class='pop-add-cart pop-common' wx:if="{{showPop}}" animation='{{animationData}}'>
+        <view class="addCart_wrap">
+            <view class='header'>
+                <image class="goodsPic" src="{{goodsInfo.pic}}" mode="aspectFill">
+                </image>
+            </view>
+            <view class='colorPart'>
+                {{goods_detail.goodsProperties[0].name}}
+                <button
+                class="buttonPart {{buttonState.button1 == index?'active-tag':''}}"
+                wx:for="{{goods_detail.goodsProperties[0].childsCurGoods}}"
+                wx:key="id"
+                size="mini"
+                bindtap="select1_change"
+                data-index="{{index}}"
+                data-color="{{item.id}}"
+                data-colorid="{{item.propertyId}}"
+                >{{item.name}}</button>
+            </view>
+            <view class='sizePart'>
+                {{goods_detail.goodsProperties[1].name}}
+                <button
+                class="buttonPart {{buttonState.button2 == index?'active-tag':''}}"
+                wx:for="{{goods_detail.goodsProperties[1].childsCurGoods}}"
+                wx:key="id"
+                size="mini"
+                bindtap="select2_change"
+                data-index="{{index}}"
+                data-size="{{item.id}}"
+                data-sizeid="{{item.propertyId}}"
+                >{{item.name}}</button>
+            </view>
+            <view class='numPart'>
+                数量
+                <input value="1" type="text" class="inputPart" bindinput="bindnuminput"/>
+            </view>
+            <button class="confirm" bindtap="confirm_addCart">
+                确定
+            </button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,90 @@
+<view class="content">
+      <view class="left">
+        <block wx:for="{{goodList.data}}" wx:key="*this">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==0}}"></template>
+        </block>
+      </view>
+      <view class="right">
+        <block wx:for="{{goodList.data}}" wx:key="*this">
+          <template is="item" data="{{...item}}" wx:if="{{index%2==1}}"></template>
+        </block>
+      </view>
+    </view>
+<!--  下面是一个模块 -->
+<template name="item">
+  <view
+  bindtap="handleTodetail"
+  data-index="{{id}}"
+  class="item">
+    <image class="item-img" src="{{pic}}" mode="widthFix" lazy-load="{{true}}"></image>
+    <view class="item-title-box">
+      <navigator url="url" class="item-title">{{name}}</navigator> 
+      <!-- <image class="arrow" src="../../image/arrow.png"></image>   -->
+    </view>
+    <view class="name">
+      <text class="price">{{'￥'+ originalPrice}}</text>
+    </view>
+    <view class="name">
+      <view class="describe">{{characteristic}}</view>
+    </view>
+  </view>
+
+</template>
+
+
+<!-- <view class="index_wrap">
+  <view class="good_wrap" hover-class="none" hover-stop-propagation="false">
+    <navigator class="good_nav">
+      <image class="good_img first" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+      </image>
+      <view class="good_title">
+        Japan Fabric vj001
+      </view>
+      <view class="good_price">
+        ￥1,700
+      </view>
+      <view class="good_discribe">
+        vanqueshjp
+      </view>
+    </navigator>
+    <navigator class="good_nav test">
+      <image class="good_img second" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+      </image>
+      <view class="good_title" selectable="false" space="false" decode="false">
+        Japan Fabric vj001
+      </view>
+      <view class="good_price" selectable="false" space="false" decode="false">
+        ￥1,700
+      </view>
+      <view class="good_discribe" selectable="false" space="false" decode="false">
+        vanqueshjp
+      </view>
+    </navigator>
+    <navigator class="good_nav">
+      <image class="good_img third" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+      </image>
+      <view class="good_title" selectable="false" space="false" decode="false">
+        Japan Fabric vj001
+      </view>
+      <view class="good_price" selectable="false" space="false" decode="false">
+        ￥1,700
+      </view>
+      <view class="good_discribe" selectable="false" space="false" decode="false">
+        vanqueshjp
+      </view>
+    </navigator>
+    <navigator class="good_nav">
+      <image class="good_img forth" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+      </image>
+      <view class="good_title" selectable="false" space="false" decode="false">
+        Japan Fabric vj001
+      </view>
+      <view class="good_price" selectable="false" space="false" decode="false">
+        ￥1,700
+      </view>
+      <view class="good_discribe" selectable="false" space="false" decode="false">
+        vanqueshjp
+      </view>
+    </navigator>
+  </view>
+</view> -->

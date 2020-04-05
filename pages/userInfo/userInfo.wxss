@@ -1,0 +1,68 @@
+/* .userInfo{
+    display: flex;
+    flex-direction: column;
+} */
+.userInfo{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    display: flex;
+    margin-top: 94rpx;
+    justify-content: center;
+    flex-direction: column;
+}
+.user_default{
+    height: 200rpx;
+    margin: 0 auto;
+    width: 200rpx;
+    border-radius: 50%;
+    border:solid #666 1rpx;
+}
+.user_logo{
+    margin: 0 auto;
+    width: 27%;
+    border-radius: 50%;
+}
+.user_name{
+    text-align: center;
+    margin-top: 20rpx;
+    line-height: 50rpx;
+    font-size: 30rpx;
+}
+.function_icon{
+    width: 70%;
+    margin: 150rpx auto;
+    display: flex;
+    /* flex-direction: row wrap; */
+    flex-flow: row wrap;
+}
+.fun_wrap{
+    width: 30%;
+    position: relative;
+}
+.fun_img{
+    width: 30%;
+    margin-top: 40rpx;
+    margin-left: 74rpx;
+}
+.fun_text{
+    width: 100%;
+    text-align: center;
+    margin-top: 15rpx;
+    /* margin: 0 auto; */
+    margin-left: 17rpx;
+    font-size: 20rpx;
+}
+.fav{
+    margin-top: 22rpx;
+}
+.fun_con{
+    position: absolute;
+    z-index: 999;
+    top: 40rpx;
+    left: 50rpx;
+    opacity: 0;
+    width: 100rpx;
+    height: 100rpx;
+}

@@ -1,0 +1,169 @@
+<view class="bill_page">
+    <!-- <view class="edit">编辑商品></view> -->
+    <view class="bill_max">
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+            <view class="left_arrow">
+                <image class="arrow_btn" src="/icons/right_arrow.png" mode="widthFix"/>
+            </view>
+            
+        </view>
+        <view class="line_hr"></view>
+        <view class="bill_wrap">
+            <view class="choose_icon">
+                <image class="circle_btn" src="/icons/circle.png" mode="widthFix"/>
+            </view>
+            <view class="bill_place">
+                <view class="text_first">
+                    <text class="name_number" space="{{true}}" decode="{{true}}">陈二&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18777066666</text>
+                </view>
+                <view class="bill_text">
+                    <text class="provience"space="{{true}}" decode="{{true}}">广东省&nbsp;</text>
+                    <text class="city" space="{{true}}" decode="{{true}}">东莞市&nbsp;</text>
+                    <text class="stree" space="{{true}}" decode="{{true}}">南城街道&nbsp;</text>
+                    <text class="detail_add" space="{{true}}" decode="{{true}}">第一国际百安中心&nbsp;</text>
+                </view>
+            </view>
+        </view>
+        <view class="line_hr"></view>
+    </view>
+</view>

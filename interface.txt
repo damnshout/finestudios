@@ -1,0 +1,53 @@
+接口列表：
+0、 用户注册：
+    https://api.it120.cc/SWE/user/wxapp/register/simple
+1、 商品分类：
+    https://api.it120.cc/SWE/shop/goods/category/all
+    商品列表：
+    https://api.it120.cc/SWE/shop/goods/list
+        POST参数 categoryId
+2、 添加收藏：
+    https://api.it120.cc/SWE/shop/goods/fav/add
+    查看收藏：
+    https://api.it120.cc/SWE/shop/goods/fav/check
+    删除收藏：
+    https://api.it120.cc/SWE/shop/goods/fav/delete
+    收藏列表：
+    https://api.it120.cc/SWE/shop/goods/fav/list
+        POST参数 goodsId
+                 token
+3、 添加购物车
+    https://api.it120.cc/SWE/shopping-cart/add
+        POST参数：goodsId number
+    清空购物车
+    https://api.it120.cc/SWE/shopping-cart/empty
+    读取购物车
+    https://api.it120.cc/SWE/shopping-cart/info
+    移除购物车某条
+    https://api.it120.cc/SWE/shopping-cart/modifyNumber
+        POST参数key	购物车记录的key，多个key请用英文逗号分隔
+4、 添加地址
+    https://api.it120.cc/SWE/user/shipping-address/add
+        address	详细地址		
+        cityId	所属城市编码	
+        linkMan	联系人			
+        mobile	手机号码			
+        provinceId	所属省份编码
+    默认收货地址
+    https://api.it120.cc/SWE/user/shipping-address/default/v2
+    删除收货地址
+    https://api.it120.cc/SWE/user/shipping-address/delete
+        id 记录id
+    收货地址详情
+    https://api.it120.cc/SWE/user/shipping-address/detail/v2
+        id 记录id
+    https://api.it120.cc/SWE/user/shipping-address/list
+    修改地址
+    https://api.it120.cc/SWE/user/shipping-address/update
+        address	详细地址			
+        cityId	所属城市编码			 
+        id	需要修改的记录id			
+        linkMan	联系人			
+        
+
+

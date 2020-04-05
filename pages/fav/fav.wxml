@@ -1,0 +1,29 @@
+<!-- <view class="fav_page"> -->
+    <!-- <view class="fav_wrap">
+        <view 
+        wx:for="{{favlist}}"
+        wx:key="id"
+        class="fav_item">
+            <view class="good_name">{{item.goodsName}}</view>
+            <view class="good_img">
+                <image src="{{item.pic}}" />
+            </view>
+        </view>
+    </view> -->
+<view class="collect_main">
+    <view class="collect_content">
+      <navigator class="goods_item" wx:for="{{favlist}}" wx:key="goodsId"
+        url="/pages/goodInfo/goodInfo?goods_id={{item.goodsId}}">
+        <!-- 左侧 图片容器 -->
+        <view class="goods_img_wrap">
+          <image mode="widthFix"
+            src="{{item.pic}}">
+          </image>
+        </view>
+        <!-- 右侧 商品容器 -->
+        <view class="goods_info_wrap">
+          <view class="goods_name">{{item.goodsName}}</view>
+        </view>
+      </navigator>
+    </view>
+</view>

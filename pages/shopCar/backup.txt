@@ -1,0 +1,197 @@
+<!-- <button bindtap="clearall" type="primary">清除所有缓存</button>
+<button bindtap="clearCar" type="warn">清空购物车</button>
+<view class="shopCar_page">
+
+    <view class="edit">编辑商品></view>
+    <view class="shopCar_max">
+        <view class="shopCar_wrap">
+            <!-- 复选框 -->
+            <view class="chk_wrap">
+                <checkbox-group bindchange="">
+                    <checkbox  ></checkbox>
+                </checkbox-group>
+            </view>
+            <!-- 商品图片 -->
+            <navigator class="img_wrap">
+                <image class="img_good" mode="widthFix" src="/images/good1.png"/>
+            </navigator>
+            <!-- 商品信息 -->
+            <view class="info_wrap">
+                <view class="goods_name">Janpan Fabric vj001</view>
+                <view class="good_price">￥1,700</view>
+                <view class="describe">vanspans</view>
+                <view class="choose_wrap">
+                    <view class="edit_first">
+                        <view class="num_edit">-</view>
+                        <view class="num">8</view>
+                        <view class="num_edit">+</view>
+                    </view>
+                    <view class="color_wrap">
+                        <view class="color_text">颜色</view>
+                    
+                        <view class="color_pick"></view>
+                    </view>
+                    <view class="size_wrap">
+                        <view class="size_text">尺寸</view>
+                        <view class="size_pick"></view>
+
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+        <view class="line_hr"></view>
+
+
+
+    </view>
+
+    <view class="CarList_wrap">
+        <view 
+        wx:for="{{carList}}"
+        wx:key="key"
+        class="item_wrap">
+            <view class="goodName">{{item.name}}</view>
+            <view class="goodImg">
+                <image class="" src="{{item.pic}}" mode="aspectFit" lazy-load="false">  
+                </image>
+            </view>
+        </view>
+    </view>
+</view>
+ -->
+
+
+
+  .shopCar_page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.shopCar_max{
+    max-height: 84%;
+    /* border: solid black 2px; */
+    overflow-y: scroll;
+}
+.edit{
+    width: 100%;
+    font-size: 25rpx;
+    text-align: right;
+    margin-left: -20rpx;
+    padding-top: 10rpx;
+}
+.circle_btn,.arrow_btn{
+    padding: 20rpx 20rpx;
+    width: 50%;
+}
+.shopCar_wrap{
+    display: flex;
+    /* justify-content: space-around; */
+    /* height: 100rpx; */
+    /* line-height: 50rpx;
+    margin-top: 20rpx; */
+    /* width: 100%; */
+}
+.chk_wrap{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_wrap{
+    flex:1.2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}    
+.img_good{
+    width: 80%;
+}
+.info_wrap{
+    flex:4;
+    font-size: 16rpx;
+}
+.shopCar_text{
+    text-align: left;
+    width: 100%;
+}
+.name_number{
+    text-align: left;
+}
+.good_name{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.edit_first{
+    flex:2;
+    display: flex;
+}
+.choose_wrap{
+    display: flex;
+    margin-top: 40rpx;
+    justify-content: space-between;
+}
+.num_edit{
+    flex:4;
+    border:solid #666 1rpx;
+    text-align: center;
+
+}
+.num{
+    flex:5;
+    border:solid #666 1rpx;
+    text-align: center;
+
+}
+.color_wrap{
+    flex:3;
+    display: flex;
+}
+.size_wrap{
+    flex:3;
+    display: flex;
+}
+.color_text{
+    flex:0.5;
+    border:solid #666 1rpx;
+}.color_pick{
+    flex:0.5;
+    border:solid #666 1rpx;
+}
+.size_text{
+    flex:0.5;
+    border:solid #666 1rpx;
+}.size_pick{
+    flex:0.5;
+    border:solid #666 1rpx;
+}
+
+/* .choose_icon{
+    border: solid red 1px; 
+     width: 10%;
+} */
+.line_hr{
+    margin: 20rpx auto;
+    width:90%;
+    height:2rpx;
+    background:#aaa;
+}
+.shopCar_btn{
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 27rpx;
+    padding: 30rpx 60rpx;
+    border-radius: 6rpx;
+}
+.btn_wrap{
+    position: absolute;
+    bottom: 0rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

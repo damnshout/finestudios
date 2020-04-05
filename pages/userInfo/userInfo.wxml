@@ -1,0 +1,48 @@
+<view class="userInfo">
+    <view wx:if="{{userInfo.detail.avatarUrl}}"
+    class="header">
+        <image class="user_logo" mode="widthFix" src="{{userInfo.detail.avatarUrl}}"/>
+        <view class="user_name">
+            {{userInfo.detail.nickName}}
+        </view>
+    </view>
+    <view wx:else
+    bindtap="handleGologin"
+    class="header">
+        <!-- <image class="user_default" mode="widthFix" src=""/> -->
+        <view class="user_default"></view>
+        <view class="user_name">
+            点击头像登录
+        </view>
+    </view>
+
+    <view class="function_icon">
+        <view class="fun_wrap" bindtap="handleGofav">
+            <image class="fun_img" mode="widthFix" src="/icons/fav.png"/>
+            <view class="fun_text fav">
+            我的收藏
+            </view>
+        </view>
+        <view class="fun_wrap" bindtap="handleGobill">
+            <image class="fun_img" mode="widthFix" src="/icons/bill.png" />
+            <view class="fun_text">
+            历史订单
+            </view>    
+        </view>
+        <view class="fun_wrap" bindtap="handleGoadd">
+            <image class="fun_img" mode="widthFix" src="/icons/address.png" />
+            <view class="fun_text">
+            地址管理
+            </view>
+        </view>
+        <view class="fun_wrap" bindtap="handleGocon">
+            <image class="fun_img" mode="widthFix"  src="/icons/contract.png" />
+            <view class="fun_text">
+            联系我们  
+            </view>
+            <button class="fun_con" open-type="contact"></button>
+        </view>
+         
+
+    </view>
+</view>

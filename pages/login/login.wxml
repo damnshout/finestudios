@@ -1,0 +1,17 @@
+<view class="login">
+    <view class="login_wrap">
+        <view class="login_text">
+            <view class="text_first">
+                FineStudios
+            </view>
+            <view class="text_second" hover-class="none" hover-stop-propagation="false">
+                汇集流行好物
+            </view>
+
+        </view>
+        <view class="text_third">
+            马上登录入手好物
+            <button class="button_login" open-type="getUserInfo" bindgetuserinfo="getuserinfo">微信登录</button>
+        </view>
+    </view>
+</view>

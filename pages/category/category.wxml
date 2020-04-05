@@ -1,0 +1,10 @@
+<view class="cate_view" hover-class="none" hover-stop-propagation="false">    
+    <sitchtab class="cate"
+    wx:for="{{cateList.data}}"
+    wx:key="*this"
+    bindtap="handleGoIndex"
+    data-index="{{item.id}}"
+    >
+        <view class="catelog">{{item.name}}</view>
+    </sitchtab>
+</view>

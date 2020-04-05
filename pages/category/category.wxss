@@ -1,0 +1,6 @@
+.cate{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 100rpx;
+}
